@@ -15,10 +15,10 @@ function ItemContent(props) {
       <div className="footer">
         <div className="address_container">
           <p>{props.address}</p>
-          <span><img src="http://placehold.it/15x15" />81m2</span>
-          <span><img src="http://placehold.it/15x15" />3</span>
-          <span><img src="http://placehold.it/15x15" />2</span>
-          <span><img src="http://placehold.it/15x15" />2</span>
+          <span><img src="http://placehold.it/15x15" alt=""/>81m2</span>
+          <span><img src="http://placehold.it/15x15" alt=""/>3</span>
+          <span><img src="http://placehold.it/15x15" alt=""/>2</span>
+          <span><img src="http://placehold.it/15x15" alt=""/>2</span>
         </div>
         <div className="contact_container">
           <button className="button ghost">Telefone</button>
