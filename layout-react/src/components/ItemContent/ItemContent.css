@@ -23,20 +23,20 @@
   justify-content: space-between;
 }
 
-.address_container p {
+.address-container p {
   margin-bottom: 20px;
   font-size: 18px;
 }
 
-.address_container span {
+.address-container span {
   margin-right: 20px;
 }
 
-.address_container span > img {
+.address-container span > img {
   margin-right: 5px;
 }
 
-.contact_container .button {
+.contact-container .button {
   width: 130px;
   height: 60px;
   font-size: 16px;
@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 
-.contact_container .ghost {
+.contact-container .ghost {
   background-color: white;
   color: orangered;
   width: 80px;

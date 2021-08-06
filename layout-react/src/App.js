@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <ListItem 
-        src="http://placehold.it/350x270"
+        thumbUrl="http://placehold.it/350x270"
         price="R$ 720.000"
         condoPrice="R$ 450"
         taxPrice="R$ 2.148"
