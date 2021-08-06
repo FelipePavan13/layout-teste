@@ -10,7 +10,13 @@ function ListItem(props) {
         <img src={props.src} alt="Imagem do Imóvel" className="picture"></img>
       </div>
       <div className="content_container">
-        <ItemContent price={props.price} condoPrice={props.condoPrice} taxPrice={props.taxPrice}/>
+        <ItemContent 
+          price={props.price} 
+          condoPrice={props.condoPrice} 
+          taxPrice={props.taxPrice} 
+          description={props.description}
+          address={props.address}
+        />
       </div>
     </div>
   );
