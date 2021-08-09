@@ -24,8 +24,8 @@ function ItemContent(props) {
           <span><img src="http://placehold.it/15x15" alt=""/>2</span>
         </div>
         <div className="contact-container">
-          <Button ghost label="Telefone"/>
-          <Button label="Mensagem"/>
+          <Button label="Telefone" ghost />
+          <Button label="Mensagem" />
         </div>
       </div>
     </>
