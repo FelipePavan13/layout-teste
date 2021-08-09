@@ -1,5 +1,6 @@
 import React from 'react';
 import './ItemContent.css';
+import Button from '../Button/Button';
 
 function ItemContent(props) {
   const {price, condoPrice, taxPrice, address, description} = props;
@@ -23,8 +24,8 @@ function ItemContent(props) {
           <span><img src="http://placehold.it/15x15" alt=""/>2</span>
         </div>
         <div className="contact-container">
-          <button className="button ghost">Telefone</button>
-          <button className="button">Mensagem</button>
+          <Button ghost label="Telefone"/>
+          <Button label="Mensagem"/>
         </div>
       </div>
     </>
