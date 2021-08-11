@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageLabel from '../ImageLabel/ImageLabel';
 import ItemContent from '../ItemContent/ItemContent';
 import './ListItem.css';
 
@@ -8,7 +9,7 @@ function ListItem(props) {
   return (
     <div className="container">
       <div className="picture-container">
-        <img src={props.thumbUrl} alt="Imagem do Imóvel" className="picture"></img>
+        <ImageLabel thumbUrl="http://placehold.it/300x270" altDescription="Imagem do Imóvel"/>
       </div>
       <div className="content-container">
         <ItemContent 
