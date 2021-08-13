@@ -1,5 +1,7 @@
 import React from 'react';
 import './ItemContent.css';
+import Button from '../Button/Button';
+import IconLabel from '../IconLabel/IconLabel'
 
 function ItemContent(props) {
   const {price, condoPrice, taxPrice, address, description} = props;
@@ -17,14 +19,14 @@ function ItemContent(props) {
       <div className="footer">
         <div className="address-container">
           <p>{address}</p>
-          <span><img src="http://placehold.it/15x15" alt=""/>81m2</span>
-          <span><img src="http://placehold.it/15x15" alt=""/>3</span>
-          <span><img src="http://placehold.it/15x15" alt=""/>2</span>
-          <span><img src="http://placehold.it/15x15" alt=""/>2</span>
+          <IconLabel iconUrl="http://placehold.it/15x15" label="85m2"/>
+          <IconLabel iconUrl="http://placehold.it/15x15" label="2"/>
+          <IconLabel iconUrl="http://placehold.it/15x15" label="4"/>
+          <IconLabel iconUrl="http://placehold.it/15x15" label="1"/>
         </div>
         <div className="contact-container">
-          <button className="button ghost">Telefone</button>
-          <button className="button">Mensagem</button>
+          <Button label="Telefone" ghost />
+          <Button label="Mensagem" />
         </div>
       </div>
     </>
