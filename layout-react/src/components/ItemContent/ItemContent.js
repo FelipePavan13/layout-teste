@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ItemContent.css';
+import heartPic from '../static/heart1.png';
+import fullHeartPic from '../static/heart2.png';
 import Button from '../Button/Button';
 import IconLabel from '../IconLabel/IconLabel'
 
 function ItemContent(props) {
   const {price, condoPrice, taxPrice, address, description} = props;
 
+  const [favorite, setFavorite] = useState(false);
+
   return (
     <>
       <div className="header">
         <h1>{price}</h1>
         <h3>condomínio {condoPrice} • IPTU {taxPrice}</h3>
-        <img src="http://placehold.it/30x30" alt="" />
+        <button onClick={() => setFavorite(!favorite)}><img src={favorite ? fullHeartPic : heartPic} alt="" /></button>
       </div>
       <div className="body">
         <p>{description}</p>
